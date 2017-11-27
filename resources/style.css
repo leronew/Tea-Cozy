@@ -1,21 +1,21 @@
 body {
-  background-color: black;
+  background-color: #000;
   font-size: 22px;
   font-family: Helvetica;
   text-align: center;
   opacity: 0.9;
   color: seashell;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
+/*Header and Nav bar styling start...*/
 header{
   display: flex;
   position: fixed;
   justify-content: space-between;
   width: 100%;
-  background-color: black;
+  background-color: #000;
   border-bottom: 1px solid seashell;
   height: 69px;
   align-items: center;
@@ -35,24 +35,29 @@ nav span{
 nav a{
   color: inherit;
 }
+/*Header styling ends*/
 
+/*Mission section starts...*/
 .mission{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 69px;
+  margin-top: 69px; /*Pushes the section down 69px since the header is fixed with height 69px*/
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 700px;
   width: 1200px;
-  margin: auto;
+  margin: auto; /*Centers the div both horizontally and vertically*/
 }
 
 .content{
-  background-color: black;
+  background-color: #000; /*Is there a way to get the body 
+  background color to show instead of repeating it here?*/
 }
+/*Mission section ends*/
 
+/*Tea section starts...*/
 .tea{
   margin-top: 50px;
   margin-bottom: 25px;
@@ -64,49 +69,7 @@ nav a{
   margin: 10px;
 }
 
-.tea-month{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  width: 1000px;
-  margin: auto;
-}
-
-.tea-month div{
-  padding-bottom: 30px;
-}
-
-.locations{
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-flow: row wrap;
-  height: 550px;
-  width: 1200px;
-  margin: auto;
-}
-
-.full-width{
-  width: 100%;
-}
-
-.address{
-  background-color: black;
-  width: 300px;
-  margin: 15px 40px;
-}
-
-.footer{
-  height: 200px;
-}
-
-#copyright{
-  text-align: left;
-  margin-left: 20px;
-}
-
+/*order images in tea section*/
 #bedford{
   order: 5;
 }
@@ -125,4 +88,49 @@ nav a{
 
 #rum{
   order: 2;
+}/*order images in tea section*/
+
+.tea-month{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 1000px;
+  margin: auto;
+}
+
+.tea-month div{
+  padding-bottom: 30px;
+}/*Tea section ends*/
+
+/*Location section starts...*/
+.locations{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
+  height: 550px;
+  width: 1200px;
+  margin: auto;
+}
+
+.full-width{
+  width: 100%;
+}
+
+.address{
+  background-color: #000;
+  width: 300px;
+  margin: 15px 40px;
+}
+/*Location section ends...*/
+
+.footer{
+  height: 200px;
+}
+
+#copyright{
+  text-align: left;
+  margin-left: 20px;
 }
